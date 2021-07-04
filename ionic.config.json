@@ -1,0 +1,7 @@
+{
+  "name": "BDA",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
