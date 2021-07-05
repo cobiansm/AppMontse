@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Tab3Page } from '../tab3/tab3.page';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +9,9 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(private router: Router) {}
 
+  clkVerduras(){
+    console.log('No hace nada lol')
+  }
 }

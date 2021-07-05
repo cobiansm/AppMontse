@@ -9,9 +9,49 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Ranking de semillas</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <img src = "../assets/nuecesindia.jpeg"/>
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-icon name="star"></ion-icon> <ion-icon name="star"></ion-icon> <ion-icon name="star"> </ion-icon> <ion-icon name="star"></ion-icon> <ion-icon name="star"></ion-icon>
+      </ion-card-subtitle>
+      <ion-card-title>Nueces de la India</ion-card-title>
+    </ion-card-header>
+    <ion-button (click)="clkSemillas()" color='warning'>
+      <ion-icon name="pencil-outline"></ion-icon>
+      Editar
+    </ion-button>
+    <ion-card-content>
+    Las nueces de la India son geniales. Es un árbol originario de Centroamérica, del nordeste de Brasil, costa de Colombia y sur de Venezuela. Muchos de sus componentes son utilizados en la elaboración de productos diversos, como por ejemplo dulces, cosméticos y medicamentos.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src = "../assets/pepitas.jpg"/>
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-icon name="star"></ion-icon> <ion-icon name="star"></ion-icon> <ion-icon name="star"> </ion-icon> <ion-icon name="star"></ion-icon> <ion-icon name="star-half"></ion-icon>
+      </ion-card-subtitle>
+      <ion-card-title>Semillas de calabaza</ion-card-title>
+    </ion-card-header>
+    <ion-button (click)="clkSemillas()" color='success'>
+      <ion-icon name="pencil-outline"></ion-icon>
+      Editar
+    </ion-button>
+    <ion-card-content>
+      Las pepitas son amazing. Las pepitas de calabaza son comestibles y se consumen asadas, especialmente en México y partes de Guatemala. Se preparan remojándolas en agua saturada de sal, y poniéndolas a tostar en un comal con sal; también se utilizan para preparar una variedad de mole conocido como pepian o pipián.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button  expand="block" color="light" [routerLink]="['/tab2']">
+    Verduras
+  </ion-button>
+<ion-button [routerLink]="['/tabs']" expand="block" color="dark">
+  Inicio
+</ion-button>
+
 </ion-content>

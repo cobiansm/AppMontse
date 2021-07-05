@@ -9,9 +9,49 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Ranking de verduras</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <img src = "../assets/bruselas.jpg"/>
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-icon name="star"></ion-icon> <ion-icon name="star"></ion-icon> <ion-icon name="star"> </ion-icon> <ion-icon name="star"></ion-icon> <ion-icon name="star"></ion-icon>
+      </ion-card-subtitle>
+      <ion-card-title>Coles de bruselas</ion-card-title>
+    </ion-card-header>
+    <ion-button (click)="clkVerduras()" color='success'>
+      <ion-icon name="pencil-outline"></ion-icon>
+      Editar
+    </ion-button>
+    <ion-card-content>
+    Las coles de bruselas son geniales. Son un tipo de cultivar invernal de coles. El nombre común, de Bruselas, se debe a su prominente lugar originario de cultivo. Es conocida por su alto contenido en Vitamina A y C y ácido fólico.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src = "../assets/carrots.jpg"/>
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-icon name="star"></ion-icon> <ion-icon name="star"></ion-icon> <ion-icon name="star"> </ion-icon> <ion-icon name="star"></ion-icon> <ion-icon name="star-half"></ion-icon>
+      </ion-card-subtitle>
+      <ion-card-title>Baby carrots</ion-card-title>
+    </ion-card-header>
+    <ion-button (click)="clkVerduras()" color='warning'>
+      <ion-icon name="pencil-outline"></ion-icon>
+      Editar
+    </ion-button>
+    <ion-card-content>
+      Las zanahorias bebés son amazing. Una zanahoria baby es una zanahoria que se cosecha antes de alcanzar la madurez y se vende en ese tamaño más pequeño. Una zanahoria cortada en bebé es un trozo pequeño cortado de una zanahoria más grande.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button [routerLink]="['/tab3']" expand="block" color="light">
+  Frutas
+</ion-button>
+<ion-button [routerLink]="['/tabs']" expand="block" color="dark">
+  Inicio
+</ion-button>
+
 </ion-content>
