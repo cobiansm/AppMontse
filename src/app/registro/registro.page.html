@@ -3,7 +3,7 @@
   <ion-card>
     <ion-item>
       <ion-card-header>
-        <ion-card-title>Sign in</ion-card-title>
+        <ion-card-title>Registro</ion-card-title>
       </ion-card-header>
     </ion-item>
   
@@ -18,7 +18,7 @@
         <ion-input type='password' [(ngModel)]="contra"></ion-input>
       </ion-item>
       <ion-button (click)=login() [routerLink]="['/tabs']" color="light" size="full">LOGIN</ion-button>
-      <ion-button [routerLink]="['/registro']" color="dark" size="full">REGISTRARSE</ion-button>
+      <ion-button (click)=registro() color="dark" size="full">REGISTRARSE</ion-button>
     </ion-card-content>
   </ion-card>
   </div>
